@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CartFragment" >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:textSize="16sp"
+        android:layout_weight="0" />
+
+    <TextView
+        android:id="@+id/text_view_cart_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="end"
+        android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_cart_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Save"
+        android:layout_weight="0" />
+
+</LinearLayout>
